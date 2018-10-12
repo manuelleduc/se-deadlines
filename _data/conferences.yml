@@ -188,6 +188,7 @@
   deadline: "2018-11-16 23:59:59"
   timezone: Etc/GMT+12
   date: June 20 - June 22, 2019
+  sub: CF
 
 - name: MODELS
   year: 2018
