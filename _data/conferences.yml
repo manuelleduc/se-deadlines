@@ -11,6 +11,26 @@
   place: Montréal, QC, Canada
   sub: CF
 
+- name: Programming Issue 1
+  year: 2019
+  id: prog191
+  link: http://programming-journal.org/
+  deadline: "2019-02-01 23:59:59"
+  timezone: Etc/GMT+12
+  date: Unknown
+  place: Unknown
+  sub: JN
+
+- name: Programming Issue 2
+  year: 2019
+  id: prog192
+  link: http://programming-journal.org/
+  deadline: "2019-06-01 23:59:59"
+  timezone: Etc/GMT+12
+  date: Unknown
+  place: Unknown
+  sub: JN
+
 - name: Programming
   year: 2018
   id: prog18
