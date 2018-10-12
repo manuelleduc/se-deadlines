@@ -1,6 +1,9 @@
 ---
 - name: Conferences
   sub: CF
+  
+- name: Journals
+  sub: JN
 
 - name: Workshops
   sub: WS
