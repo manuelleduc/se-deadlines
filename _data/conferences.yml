@@ -1,6 +1,16 @@
 
 ---
 
+- name: ECFMA
+  year: 2019
+  id: ecmfa19
+  link: https://staf2019.win.tue.nl/events/ecmfa19/
+  deadline: "2019-03-15 23:59:59"
+  timezone: Etc/GMT+12
+  date: Jul 15, 2019 - Jul 19, 2019 
+  place: Eindhoven, The Netherlands
+  sub: CF
+
 - name: NIER@ICSE
   year: 2019
   id: nier19
