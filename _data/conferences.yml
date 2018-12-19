@@ -1,6 +1,14 @@
 
 ---
 
+- name: MODELS
+  year: 2019
+  id: models19
+  link: http://www.modelsconference.org/
+  deadline: "2019-04-29 23:59:59"
+  timezone: Etc/GMT+12
+  sub: CF
+
 - name: ASE
   year: 2019
   id: ase19
