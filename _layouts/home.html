@@ -54,7 +54,12 @@
               </div>
             </div>
         </div>
-        {% for conf in site.data.conferences %}
+        {% assign today_date = 'now' | date: '%s' %}
+        {% assign confs = site.data.conferences | sort: "deadline"  %}
+        {% for conf in confs %}
+        {% assign conf_date = conf.deadline | date: '%s' %}
+        
+        {% if conf_date > today_date %}
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -75,7 +80,9 @@
           </div>
           <hr>
         </div>
+        {% endif %}
         {% endfor %}
+        
         <footer>
           Maintained by <a href="//twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>.
         </footer>
@@ -83,7 +90,10 @@
     </div>
     <script type="text/javascript" charset="utf-8">
     $(function() {
-        {% for conf in site.data.conferences %}
+        {% for conf in confs %}
+        {% assign conf_date = conf.deadline | date: '%s' %}
+        
+        {% if conf_date > today_date %}
         {% if conf.deadline == "TBA" %}
           $('#{{conf.id}} .timer').html("TBA");
           $('#{{conf.id}} .deadline-time').html("TBA");
@@ -123,6 +133,7 @@
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#{{conf.id}}').addClass('past');
+        {% endif %}
         {% endif %}
         {% endfor %}
 
