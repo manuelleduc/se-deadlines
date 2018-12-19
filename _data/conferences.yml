@@ -1,6 +1,15 @@
 
 ---
 
+- name: OOPSLA
+  year: 2019
+  id: oopsla19
+  link: https://conf.researchr.org/track/splash-2019/splash-2019-oopsla
+  deadline: "2019-05-05 23:59:59"
+  timezone: Etc/GMT+12
+  sub: CF
+
+
 - name: SPLC
   year: 2019
   id: splc19
